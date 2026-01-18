@@ -1,0 +1,9 @@
+.app {
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+}
+
+.main-content {
+  padding-top: 120px; /* Space for fixed header */
+  min-height: calc(100vh - 120px);
+}

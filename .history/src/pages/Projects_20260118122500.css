@@ -1,0 +1,267 @@
+.projects-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 6rem;
+    width: 100%;
+  }
+
+
+.projects-content-all {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-folder-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-folder-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  pointer-events: none;
+}
+
+.project-tab-clickable {
+  position: absolute;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  padding: 0;
+  pointer-events: auto;
+}
+
+.project-tab-all-click {
+  top: 0;
+  left: 0;
+  width: 26%;
+  height: 2.5%;
+  cursor: pointer;
+}
+
+.project-tab-uiux-click {
+  top: 0.7%;
+  left: 27%;
+  width: 20%;
+  height: 2%;
+  cursor: pointer;
+}
+
+.project-tab-graphic-click {
+  top: 0.7%;
+  left: 57%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 2%;
+}
+
+.project-tab-dev-click {
+  top: 0.7%;
+  left: 78%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 2%;
+}
+
+/* ========================================
+   UI/UX Folder Tab Positions
+   ======================================== */
+.project-tab-all-click.active-ui-ux {
+  top: 1%;
+  left: 0;
+  width: 26%;
+  height: 2.5%;
+}
+
+.project-tab-uiux-click.active-ui-ux {
+  top: 0.7%;
+  left: 27%;
+  width: 20%;
+  height: 2%;
+}
+
+.project-tab-graphic-click.active-ui-ux {
+  top: 0.7%;
+  left: 57%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 2%;
+}
+
+.project-tab-dev-click.active-ui-ux {
+  top: 0.7%;
+  left: 78%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 2%;
+}
+
+/* ========================================
+   Graphic Design Folder Tab Positions
+   ======================================== */
+.project-tab-all-click.active-graphic-design {
+  top: 0;
+  left: 0;
+  width: 26%;
+  height: 2.5%;
+}
+
+.project-tab-uiux-click.active-graphic-design {
+  top: 0.7%;
+  left: 27%;
+  width: 20%;
+  height: 2%;
+}
+
+.project-tab-graphic-click.active-graphic-design {
+  top: 0.7%;
+  left: 57%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 2%;
+}
+
+.project-tab-dev-click.active-graphic-design {
+  top: 0.7%;
+  left: 78%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 2%;
+}
+
+/* ========================================
+   Development Folder Tab Positions
+   ======================================== */
+.project-tab-all-click.active-dev {
+  top: 0;
+  left: 0;
+  width: 26%;
+  height: 2.5%;
+}
+
+.project-tab-uiux-click.active-dev {
+  top: 0.7%;
+  left: 27%;
+  width: 20%;
+  height: 2%;
+}
+
+.project-tab-graphic-click.active-dev {
+  top: 0.7%;
+  left: 57%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 2%;
+}
+
+.project-tab-dev-click.active-dev {
+  top: 0.7%;
+  left: 78%;
+  transform: translateX(-50%);
+  width: 20%;
+  height: 2%;
+}
+
+.projects-tabs {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  z-index: 10;
+  width: 100%;
+  max-width: 600px;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+
+.project-tab {
+  background: transparent;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-family: var(--font-family-primary);
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 12px 12px 0 0;
+  color: var(--color-primary-black);
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.project-tab-all {
+  color: var(--color-primary-black);
+}
+
+.project-tab-all.active {
+  z-index: 5;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+}
+
+.project-tab-uiux {
+  color: var(--color-primary-black);
+  margin-left: -12px;
+}
+
+.project-tab-uiux.active {
+  z-index: 5;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+}
+
+.project-tab-graphic {
+  color: var(--color-primary-white);
+  margin-left: -12px;
+}
+
+.project-tab-graphic.active {
+  z-index: 5;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+}
+
+.project-tab-dev {
+  color: var(--color-primary-white);
+  margin-left: -12px;
+}
+
+.project-tab-dev.active {
+  z-index: 5;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+}
+
+.project-tab:hover:not(.active) {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+    
+
+
+  @media (max-width: 1024px) {
+    .projects-content {
+      padding: 2rem 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects-content {
+      padding: 14rem 1.5rem 1.5rem 2rem;
+    }
+  }
+  

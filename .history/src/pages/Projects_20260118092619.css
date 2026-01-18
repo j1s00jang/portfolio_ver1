@@ -1,0 +1,35 @@
+.projects-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 6rem;
+    width: 100%;
+  }
+
+.projects-content-all {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-folder-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+  
+  @media (max-width: 1024px) {
+    .projects-content {
+      padding: 2rem 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects-content {
+      padding: 14rem 1.5rem 1.5rem 2rem;
+    }
+  }
+  

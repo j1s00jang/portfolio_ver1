@@ -1,0 +1,62 @@
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-primary-white);
+  stroke: var(--color-primary-white);
+  stroke-width: 2;
+}
+
+.contact-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--color-primary-purple);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  background-color: var(--color-primary-purple);
+}
+
+.contact-btn:active {
+  transform: scale(0.95);
+}
+
+.contact-btn:hover {
+  color: var(--color-primary-white);
+}
+
+.contact-btn-text {
+  color: var(--color-primary-black);
+  font-family: var(--font-family-primary);
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: lowercase;
+  line-height: 1;
+}
+
+.contact-btn:hover .contact-btn-text {
+  color: var(--color-primary-white);
+}
+
+@media (max-width: 768px) {
+
+  .contact-btn {
+    width: 70px;
+    height: 70px;
+  }
+
+  .contact-btn-text {
+    font-size: 0.65rem;
+  }
+}

@@ -1,0 +1,13 @@
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-primary-white);
+  stroke-width: 2;
+}
+
+@media (max-width: 768px) {
+  .contact-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
