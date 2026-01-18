@@ -1,6 +1,21 @@
 import Breadcrumbs from '../components/Breadcrumbs'
 import '../components/ContactIcon.css'
 import './AboutMe.css'
+import memojiImage from '../assets/about_me/memoji_jisoo.png'
+import purpleHighlight from '../assets/about_me/purple_highlight.png'
+import toastPhoto from '../assets/about_me/toast.jpg'
+import coffeePhoto from '../assets/about_me/coffee.jpg'
+import puddingPhoto from '../assets/about_me/pudding.jpg'
+import tradersJoesPhoto from '../assets/about_me/traders_joes.jpg'
+import emailIcon from '../assets/about_me/email_icon.svg'
+import emailIconWhite from '../assets/about_me/email_icon_white.svg'
+import linkedinIcon from '../assets/about_me/linkedin_icon.svg'
+import linkedinIconWhite from '../assets/about_me/linkedin_icon_white.svg'
+import resumeIcon from '../assets/about_me/resume_icon.svg'
+import resumeIconWhite from '../assets/about_me/resume_icon_white.svg'
+import instaIcon from '../assets/about_me/insta_icon.svg'
+import instaIconWhite from '../assets/about_me/insta_icon_white.svg'
+import resumePdf from '../assets/about_me/Jisoo_Jang_Resume.pdf'
 
 function AboutMe() {
   const breadcrumbItems = [
@@ -16,14 +31,14 @@ function AboutMe() {
           <div className="about-me-intro-left">
             <div className="about-me-photo">
               <img 
-                src="/src/assets/about_me/memoji_jisoo.png" 
+                src={memojiImage} 
                 alt="Jisoo's memoji" 
                 className="profile-image"
               />
             </div>
             <div className="name-title">
               <img 
-                src="/src/assets/about_me/purple_highlight.png" 
+                src={purpleHighlight} 
                 alt="" 
                 className="name-purple-highlight"
               />
@@ -46,7 +61,7 @@ function AboutMe() {
             <div className="ilove-header">
               <h2 className="ilove-title">
                 <img 
-                  src="/src/assets/about_me/purple_highlight.png" 
+                  src={purpleHighlight} 
                   alt="" 
                   className="ilove-purple-highlight"
                 />
@@ -56,7 +71,7 @@ function AboutMe() {
             <div className="ilove-body">
               <div className="ilove-left">
                 <img 
-                  src="/src/assets/about_me/toast.jpg" 
+                  src={toastPhoto} 
                   alt="My cat Toast" 
                   className="toast-photo"
                   data-tooltip="My cat Toast (1 year old)"
@@ -70,19 +85,19 @@ function AboutMe() {
                 </p>
                 <div className="ilove-small-images">
                   <img 
-                    src="/src/assets/about_me/coffee.jpg" 
+                    src={coffeePhoto} 
                     alt="Coffee" 
                     className="coffee-photo"
                     data-tooltip="My favorite coffee"
                   />
                   <img 
-                    src="/src/assets/about_me/pudding.jpg" 
+                    src={puddingPhoto} 
                     alt="Pudding I made" 
                     className="baking-photo"
                     data-tooltip="Homemade pudding"
                   />
                   <img 
-                    src="/src/assets/about_me/traders_joes.jpg" 
+                    src={tradersJoesPhoto} 
                     alt="Traders Joe's packages" 
                     className="packages-photo"
                     data-tooltip="Cute package designs"
@@ -97,7 +112,7 @@ function AboutMe() {
             <div className="skills-header">
               <h2 className="skills-title">
                 <img 
-                  src="/src/assets/about_me/purple_highlight.png" 
+                  src={purpleHighlight} 
                   alt="" 
                   className="skills-purple-highlight"
                 />
@@ -132,7 +147,7 @@ function AboutMe() {
             <div className="contact-header">
               <h2 className="contact-title">
                 <img 
-                  src="/src/assets/about_me/purple_highlight.png" 
+                  src={purpleHighlight} 
                   alt="" 
                   className="contact-purple-highlight"
                 />
@@ -147,12 +162,12 @@ function AboutMe() {
               >
                 <div className="contact-icon-container">
                   <img 
-                    src="/src/assets/about_me/email_icon.svg" 
+                    src={emailIcon} 
                     alt="Email icon" 
                     className="contact-icon contact-icon-default"
                   />
                   <img 
-                    src="/src/assets/about_me/email_icon_white.svg" 
+                    src={emailIconWhite} 
                     alt="Email icon" 
                     className="contact-icon contact-icon-hover"
                   />
@@ -168,12 +183,12 @@ function AboutMe() {
               >
                 <div className="contact-icon-container">
                   <img 
-                    src="/src/assets/about_me/linkedin_icon.svg" 
+                    src={linkedinIcon} 
                     alt="LinkedIn icon" 
                     className="contact-icon contact-icon-default"
                   />
                   <img 
-                    src="/src/assets/about_me/linkedin_icon_white.svg" 
+                    src={linkedinIconWhite} 
                     alt="LinkedIn icon" 
                     className="contact-icon contact-icon-hover"
                   />
@@ -181,7 +196,7 @@ function AboutMe() {
                 <span className="contact-btn-text">linkedin</span>
               </a>
               <a 
-                href="/src/assets/about_me/Jisoo_Jang_Resume.pdf" 
+                href={resumePdf} 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-btn resume-btn"
@@ -189,12 +204,12 @@ function AboutMe() {
               >
                 <div className="contact-icon-container">
                   <img 
-                    src="/src/assets/about_me/resume_icon.svg" 
+                    src={resumeIcon} 
                     alt="Resume icon" 
                     className="contact-icon contact-icon-default"
                   />
                   <img 
-                    src="/src/assets/about_me/resume_icon_white.svg" 
+                    src={resumeIconWhite} 
                     alt="Resume icon" 
                     className="contact-icon contact-icon-hover"
                   />
@@ -210,12 +225,12 @@ function AboutMe() {
               >
                 <div className="contact-icon-container">
                   <img 
-                    src="/src/assets/about_me/insta_icon.svg" 
+                    src={instaIcon} 
                     alt="Instagram icon" 
                     className="contact-icon contact-icon-default"
                   />
                   <img 
-                    src="/src/assets/about_me/insta_icon_white.svg" 
+                    src={instaIconWhite} 
                     alt="Instagram icon" 
                     className="contact-icon contact-icon-hover"
                   />
